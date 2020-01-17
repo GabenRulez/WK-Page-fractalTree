@@ -1,0 +1,96 @@
+:root {
+    --color1: rgba(255, 205, 178, 1);
+    --color2: rgba(255, 180, 162, 1);
+    --color3: rgba(229, 152, 155, 1);
+    --color4: rgba(181, 131, 141, 1);
+    --color5: rgba(109, 104, 117, 1);
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--color5);
+}
+
+#workspaceFractalTree{
+    background: var(--color5);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+
+    /*overflow-y:  hidden;  */  
+
+}
+
+#workspaceFractalTree {
+    width: 100vh;
+    height: 100vh;
+
+        /* tests below  */
+        width: 100vw;
+}
+
+@media all and (orientation: portrait) {
+    #workspaceFractalTree {
+        width: 100vw;
+        height: 100vw;
+    }
+}
+
+.treeElement{
+    background: var(--color2);
+}
+
+#treeRoots{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
+    height: 25%;
+    border-radius: 50%;
+
+    background: var(--color4);
+
+    /* tests below  */
+    width: 60vh;
+}
+
+.treeBranch{
+    position: absolute;
+    transform: translate(-12.5%, -100%);
+    transition-duration: 3.5s;
+    transition-timing-function: ease;
+
+    top: 0%;
+    background: black;
+}
+
+#mainRoot{
+    top: 85%;
+    left: 50%;
+    
+    width: 1%;
+    height: 18%;
+    transform: inherit;
+
+        /* tests below  */
+        width: 1vh;
+        transition-duration: 0ms;
+    
+}
+
+
+
+.left{
+    color: pink;
+}
+
+.right{
+    color: yellow;
+}

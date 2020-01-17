@@ -20,10 +20,15 @@
 }
 
 
-@media all and (orientation: portrait) and (max-aspect-ratio: 5/6) {
+@media all and (orientation: portrait) and (max-aspect-ratio: 5/7) {
     .settingsForm.hidden {
         left: 10vw;
         top: calc((100vh - 100vmin)/2 + 110vmin);
+    }
+
+    .grabber{
+        width: 5vh;
+        height: 5vh;
     }
 }
 
@@ -48,3 +53,16 @@
     right: -2.5vmin;
 }
 
+@media all and (orientation: portrait) and (max-aspect-ratio: 5/6) {
+    .grabber{
+        top:    -1.25vmax;
+        right:  -1.25vmax;
+        width: 5vmax;
+        height: 5vmax;
+    }
+
+    .grabber:hover{
+        top: -2.5vmax;
+        right: -2.5vmax;
+    }
+}

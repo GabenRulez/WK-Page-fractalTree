@@ -125,7 +125,10 @@ currentConfig = config1;
 
 //var allBranches = createTreeWith2Branches(8, config1);
 
-createTreeWith2Branches(11, config1);
+
+
+// TODO tutaj!
+//createTreeWith2Branches(11, config1);
 
 
 

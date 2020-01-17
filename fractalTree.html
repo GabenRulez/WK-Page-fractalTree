@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>tempFractalTree</title>
     <link rel="stylesheet" href="fractalTree.css">
+    <link rel="stylesheet" href="settings.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <!--Dodatkowa czcionka roboto od Google-->
 
@@ -12,6 +13,10 @@
 
 
 <body>
+    <div class="settingsForm" onclick="toggleSettings()">
+        <div class="grabber"></div>
+    </div>
+
     <div id="workspaceFractalTree">
 
         <div id="treeRoots"></div>
@@ -19,7 +24,16 @@
         <div class="treeBranch" id="mainRoot" data-generation="0" data-branchLength="20px" data-branchWidth="5px"></div>
 
     </div>
+
+
     <script type="text/javascript" src="fractalTree.js"></script>
+    <script>
+        function toggleSettings(){
+            var settings = document.getElementsByClassName("settingsForm")[0];
+            if(settings.classList.contains("hidden")) settings.classList.remove("hidden");
+            else settings.classList.add("hidden");
+        }
+    </script>
 </body>
 
 </html>

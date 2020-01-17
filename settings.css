@@ -1,0 +1,50 @@
+.settingsForm{
+    position: fixed;
+    z-index: 10;
+    width: 80vw;
+    height: 80vh;
+    left: 10vw;
+    top: 10vh;
+
+
+    transition: left 1s, top 1s;
+
+    background-color: rgba(255,255,0,0.5);
+
+    box-shadow: 2px -2px 5px #333333;
+}
+
+.settingsForm.hidden{
+    left: calc(-80vw + 2.5vh);
+    top: 97.5vh;
+}
+
+
+@media all and (orientation: portrait) and (max-aspect-ratio: 5/6) {
+    .settingsForm.hidden {
+        left: 10vw;
+        top: calc((100vh - 100vmin)/2 + 110vmin);
+    }
+}
+
+.grabber{
+    position: absolute;
+    top: -1.25vmin;
+    right: -1.25vmin;
+    width: 5vmin;
+    height: 5vmin;
+    transition: 1s;
+
+    border-radius: 50%;
+    border: 2px solid black;
+
+    box-shadow: 2px -2px 5px #333333;
+    background: rgba(109, 104, 117, 1);
+}
+
+.grabber:hover {
+    transition: 0.5s;
+    top: -2.5vmin;
+    right: -2.5vmin;
+}
+
